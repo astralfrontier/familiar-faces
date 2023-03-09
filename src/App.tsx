@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
+import EmotionSelect from "./components/EmotionSelect";
+
 import "./App.css";
 
 function App() {
-  const [currentTab, setCurrentTab] = useState(0);
+  const [emotion, setEmotion] = useState<string>("")
 
   return (
     <div className="container">
@@ -11,7 +13,7 @@ function App() {
         <i className="fas fa-home"></i>
       </span>
       <p>Familiar Faces</p>
-      <button className="button is-primary">Button</button>
+      <EmotionSelect getter={emotion} setter={setEmotion} />
     </div>
   );
 }

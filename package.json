@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.3.0",
     "bulma": "^0.9.4",
     "ramda": "^0.28.0",
     "react": "^18.2.0",
